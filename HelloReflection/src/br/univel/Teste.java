@@ -29,7 +29,7 @@ public class Teste {
 		
 		sb.append(") VALUES(");
 		
-		sb.append(cl.getSimpleName()).append(")");
+		sb.append(")");
 		String sql = sb.toString();
 		System.out.println(sql);
 			

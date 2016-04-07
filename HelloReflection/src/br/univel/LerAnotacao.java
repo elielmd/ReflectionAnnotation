@@ -1,6 +1,8 @@
 package br.univel;
 
 import br.univel.anotacao.Tabela;
+import br.univel.enums.EstadoCivil;
+import br.univel.enums.Uf;
 
 public class LerAnotacao {
 	
@@ -21,6 +23,10 @@ public class LerAnotacao {
 		Pessoa p = new Pessoa();
 		p.setId(1);
 		p.setNome("Bruce Wayne");
+		p.setEstadoCivil(EstadoCivil.SOLTEIRO);
+		p.setUf(Uf.PR);
+		
+		System.out.println(p.getUf().getNome());
 		
 		new LerAnotacao(p);
 	}
